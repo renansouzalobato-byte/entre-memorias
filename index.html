@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3ead9">
+  <meta name="description" content="Um pequeno arquivo de lembranças.">
+  <title>Entre Memórias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Entre Memórias, início"><span class="brand-mark">✳</span> entre memórias</a>
+    <nav class="chapter-nav" id="chapterNav" aria-label="Capítulos">
+      <button class="nav-link active" data-go="inicio">Início</button>
+      <button class="nav-link" data-go="jornada">Jornada</button>
+      <button class="nav-link" data-go="sons">Sons</button>
+      <button class="nav-link" data-go="galeria">Galeria</button>
+      <button class="nav-link" data-go="detalhes">Detalhes</button>
+      <button class="nav-link" data-go="carta">Carta</button>
+    </nav>
+    <button class="icon-button music-toggle" id="musicToggle" title="Música ambiente" aria-label="Ativar ou pausar música">♫</button>
+  </header>
+
+  <main>
+    <section class="screen hero-screen active" id="inicio" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-star">✦</span> um arquivo de pequenas coisas</p>
+        <h1 id="heroTitle">Entre<br><em>Memórias.</em></h1>
+        <p class="hero-lead" id="introText">Algumas coisas merecem um lugar só delas.</p>
+        <button class="primary-button" id="startJourney">Começar a jornada <span>↗</span></button>
+        <p class="hero-footnote">feito de lembranças, no seu próprio tempo</p>
+      </div>
+      <div class="hero-art" aria-label="Ilustração decorativa de fotografias e papéis">
+        <div class="sun-disc"></div>
+        <div class="tape tape-one"></div>
+        <div class="polaroid polaroid-back"><div class="photo-placeholder"><span>✿</span></div><small>um dia qualquer</small></div>
+        <div class="polaroid polaroid-front"><div class="photo-placeholder photo-placeholder-alt"><span>☼</span></div><small>guardar é uma forma de lembrar</small></div>
+        <div class="scribble">coisas<br>que ficam</div>
+        <div class="tiny-flower">✳</div>
+      </div>
+      <div class="hero-bottom"><span>01 / 06</span><span>role ou comece pelo botão</span><span>⌄</span></div>
+    </section>
+
+    <section class="screen chapter-screen" id="jornada" aria-labelledby="journeyTitle">
+      <div class="section-heading">
+        <p class="eyebrow">capítulo 01 · registros</p>
+        <h2 id="journeyTitle">Uma coisa de<br><em>cada vez.</em></h2>
+        <p class="section-intro">Pequenos recortes, sem precisar seguir uma ordem perfeita.</p>
+      </div>
+      <div class="memory-list" id="memoryList">
+        <div class="empty-state"><span>✳</span><h3>Este espaço está esperando suas memórias.</h3><p>Adicione datas, textos e fotografias pelo painel de edição.</p></div>
+      </div>
+      <div class="chapter-footer"><span>CAPÍTULO 01</span><button class="text-button" data-next="sons">Continuar <span>→</span></button></div>
+    </section>
+
+    <section class="screen chapter-screen sound-screen" id="sons" aria-labelledby="soundsTitle">
+      <div class="section-heading">
+        <p class="eyebrow">capítulo 02 · arquivo sonoro</p>
+        <h2 id="soundsTitle">Sons que<br><em>ficaram.</em></h2>
+        <p class="section-intro">Vozes, risadas e pequenos instantes que também contam histórias.</p>
+      </div>
+      <div class="audio-shelf" id="audioList">
+        <div class="empty-state"><span>♫</span><h3>Nenhuma gravação adicionada ainda.</h3><p>Você poderá incluir áudios pessoais no painel de edição.</p></div>
+      </div>
+      <div class="chapter-footer"><span>CAPÍTULO 02</span><button class="text-button" data-next="galeria">Continuar <span>→</span></button></div>
+    </section>
+
+    <section class="screen chapter-screen gallery-screen" id="galeria" aria-labelledby="galleryTitle">
+      <div class="section-heading">
+        <p class="eyebrow">capítulo 03 · fotografias</p>
+        <h2 id="galleryTitle">Um pouco de<br><em>cada momento.</em></h2>
+        <p class="section-intro">Um lugar para imagens que merecem ser revisitadas.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="empty-state"><span>▧</span><h3>As fotografias aparecem aqui.</h3><p>Adicione imagens e legendas quando quiser.</p></div>
+      </div>
+      <div class="chapter-footer"><span>CAPÍTULO 03</span><button class="text-button" data-next="detalhes">Continuar <span>→</span></button></div>
+    </section>
+
+    <section class="screen chapter-screen details-screen" id="detalhes" aria-labelledby="detailsTitle">
+      <div class="section-heading">
+        <p class="eyebrow">capítulo 04 · pequenas coisas</p>
+        <h2 id="detailsTitle">Os detalhes<br><em>também contam.</em></h2>
+        <p class="section-intro">Frases, referências, manias e assuntos que têm um significado próprio.</p>
+      </div>
+      <div class="detail-grid" id="detailGrid">
+        <article class="detail-card feature-card"><span class="detail-symbol">✎</span><p class="handwritten">“Nunca mais tu fala isso, na tua vida.”</p><small>uma frase que merece seu próprio espaço</small></article>
+        <article class="detail-card"><span class="detail-symbol">✦</span><h3>Uma coleção de descobertas</h3><p>Referências, universos favoritos e pequenas curiosidades podem morar aqui.</p><span class="tag-row"><i>Pokémon</i><i>Snoopy</i><i>doramas</i></span></article>
+        <article class="detail-card"><span class="detail-symbol">☼</span><h3>Entre páginas e telas</h3><p>Livros, filmes, histórias e tudo aquilo que desperta uma opinião.</p><span class="tag-row"><i>leituras</i><i>cinema</i><i>Oscar</i></span></article>
+        <article class="detail-card"><span class="detail-symbol">⚑</span><h3>Uma paixão em preto e branco</h3><p>Um cantinho reservado para a torcida e suas histórias.</p><span class="tag-row"><i>Vasco</i><i>futebol</i></span></article>
+      </div>
+      <div class="chapter-footer"><span>CAPÍTULO 04</span><button class="text-button" data-next="carta">Continuar <span>→</span></button></div>
+    </section>
+
+    <section class="screen letter-screen" id="carta" aria-labelledby="letterTitle">
+      <div class="letter-wrap">
+        <p class="eyebrow">última página · por enquanto</p>
+        <div class="letter-paper">
+          <span class="letter-flower">✳</span>
+          <h2 id="letterTitle">Uma última<br><em>página.</em></h2>
+          <div class="letter-body" id="letterBody">Este espaço é seu. Escreva aqui uma mensagem pessoal quando sentir que encontrou as palavras certas.</div>
+          <p class="letter-signature" id="signature">com carinho,</p>
+        </div>
+        <button class="text-button restart-button" id="restartJourney">↶ voltar ao começo</button>
+      </div>
+      <div class="hero-bottom"><span>06 / 06</span><span>obrigado por chegar até aqui</span><span>✳</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>ENTRE MEMÓRIAS</span><span>um arquivo feito com cuidado</span><button id="adminOpen" class="admin-trigger">editar conteúdo</button></footer>
+
+  <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+
+  <div class="modal" id="imageModal" aria-hidden="true" role="dialog" aria-label="Fotografia ampliada">
+    <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
+    <button class="modal-arrow prev" id="modalPrev" aria-label="Imagem anterior">‹</button>
+    <figure><img id="modalImage" alt=""><figcaption id="modalCaption"></figcaption></figure>
+    <button class="modal-arrow next" id="modalNext" aria-label="Próxima imagem">›</button>
+  </div>
+
+  <div class="modal admin-modal" id="adminModal" aria-hidden="true" role="dialog" aria-labelledby="adminTitle">
+    <div class="admin-panel">
+      <button class="modal-close admin-close" id="adminClose" aria-label="Fechar">×</button>
+      <p class="eyebrow">área de personalização</p>
+      <h2 id="adminTitle">Editar <em>memórias.</em></h2>
+      <p class="admin-note">As alterações ficam neste navegador até você exportar o arquivo JSON. Para publicar as mudanças, substitua o arquivo <code>data/content.json</code> pelo JSON exportado e envie também os arquivos de mídia.</p>
+      <div class="admin-actions">
+        <button class="primary-button" id="exportData">Exportar conteúdo JSON ↓</button>
+        <label class="secondary-button file-label">Importar JSON <input type="file" id="importData" accept=".json,application/json" hidden></label>
+        <button class="secondary-button" id="resetData">Restaurar exemplo</button>
+      </div>
+      <div class="admin-tabs">
+        <button class="admin-tab active" data-tab="memories">Memórias</button>
+        <button class="admin-tab" data-tab="photos">Galeria</button>
+        <button class="admin-tab" data-tab="audios">Áudios</button>
+        <button class="admin-tab" data-tab="letter">Carta e início</button>
+      </div>
+      <div class="admin-content" id="adminContent"></div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
