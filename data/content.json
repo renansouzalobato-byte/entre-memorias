@@ -1,0 +1,12 @@
+{
+  "config": {
+    "title": "Entre Memórias",
+    "intro": "Algumas coisas merecem um lugar só delas.",
+    "letter": "Este espaço é seu. Escreva aqui uma mensagem pessoal quando sentir que encontrou as palavras certas.",
+    "signature": "com carinho,",
+    "ambientAudio": ""
+  },
+  "memories": [],
+  "gallery": [],
+  "audios": []
+}
